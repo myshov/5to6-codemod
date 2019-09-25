@@ -182,7 +182,12 @@ var util = {
       'tolerant',
       'trailingComma',
       'useTabs',
-      'wrapColumn'
+      'wrapColumn',
+      'arrayBracketSpacing',
+      'objectCurlySpacing',
+      'arrowParensAlways',
+      'flowObjectCommas',
+      'tokens',
     ];
   },
 
@@ -197,7 +202,8 @@ var util = {
 
   getDefaultRecastConfig: function() {
     return {
-      quote: 'single'
+      quote: 'single',
+      objectCurlySpacing: false,
     };
   },
 
